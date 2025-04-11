@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compact Product Grid</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 10px;
+      font-family: 'Work Sans', sans-serif;
+      background-color: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 6px;
+      row-gap: 4px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      padding: 4px;
+    }
+
+    .item img {
+      width: 100%;
+      height: 200px; /* forza le immagini ad altezza fissa */
+      object-fit: contain;
+      margin-bottom: 4px;
+    }
+
+    .description {
+      font-size: 15px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 4px;
+      line-height: 1.1;
+    }
+
+    .cta-button {
+      background-color: #D0F412;
+      color: #000;
+      font-weight: bold;
+      border: 1px solid #000;
+      padding: 4px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+      margin: 0;
+    }
+
+    .cta-button:hover {
+      opacity: 0.9;
+      transform: scale(1.03);
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">
+      <img src="https://justplay.store/cdn/shop/files/DK0KSR27KBK1_964e99dd-f86a-49a4-b3c7-e67a64d19e5b_600x.jpg?v=1742004214" alt="Dickies">
+      <div class="description">€25,00</div>
+      <a href="https://justplay.store/products/t-shirt-dickies-youth-logo-1"><button class="cta-button">SEE MORE</button></a>
+    </div>
+    <div class="item">
+      <img src="https://justplay.store/cdn/shop/files/DK0KSR270WH1_3ac2ff91-bb4a-40af-a9a0-ee16fe61767d_600x.jpg?v=1742004203" alt="Dickies">
+      <div class="description">€25,00</div>
+      <a href="https://justplay.store/products/t-shirt-dickies-youth-logo"><button class="cta-button">SEE MORE</button></a>
+    </div>
+    <div class="item">
+      <img src="https://justplay.store/cdn/shop/files/DK0KWR27KBK1_97f4fcce-84fe-4db1-a761-3c54fa2b09ff_600x.jpg?v=1741226573" alt="Dickies">
+      <div class="description">€55,00</div>
+      <a href="https://justplay.store/products/felpa-con-cappuccio-dickies-youth-logo-1"><button class="cta-button">SEE MORE</button></a>
+    </div>
+    <div class="item">
+      <img src="https://justplay.store/cdn/shop/files/24pe-dickies-dk0ksr64kbk1_600x.jpg?v=1741951314" alt="Dickies">
+      <div class="description">€22,00</div>
+      <a href="https://justplay.store/products/t-shirt-dickies-mapleton"><button class="cta-button">SEE MORE</button></a>
+    </div>
+  </div>
+</body>
+</html>
