@@ -1,0 +1,64 @@
+<body>
+<style>
+  .fade-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none; /* disabilita i click di default */
+  }
+
+  .fade-text a {
+    pointer-events: auto; /* abilita i click solo sul link */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .fade-text.text1 {
+    animation-name: fadeInOut1;
+  }
+
+  .fade-text.text2 {
+    animation-name: fadeInOut2;
+  }
+
+  @keyframes fadeInOut1 {
+    0%   { opacity: 0; z-index: 0; }
+    10%  { opacity: 1; z-index: 1; }
+    45%  { opacity: 1; z-index: 1; }
+    55%  { opacity: 0; z-index: 0; }
+    100% { opacity: 0; z-index: 0; }
+  }
+
+  @keyframes fadeInOut2 {
+    0%   { opacity: 0; z-index: 0; }
+    50%  { opacity: 0; z-index: 0; }
+    60%  { opacity: 1; z-index: 1; }
+    95%  { opacity: 1; z-index: 1; }
+    100% { opacity: 0; z-index: 0; }
+  }
+</style>
+
+<!-- TOP HEADER -->
+<div class="fade-text-container">
+  <div class="fade-text text1"><a href="https://justplay.store/collections/lacoste">LACOSTE New In!</a>
+</div>
+<div class="fade-text text2">
+  <a href="https://justplay.store/collections/offerte" style="color: #D0F412;">
+    MID SEASON! Sconti fino al -30%!
+  </a>
+</div>
+<!-- TOP HEADER -->
+
+
+</body>
