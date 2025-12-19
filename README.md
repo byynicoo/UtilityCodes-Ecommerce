@@ -20,3 +20,5 @@ Ideal for:
 ## 🚀 Included Components
 ### ✅ Compact Product Grid (2x2)
 A lightweight, responsive 2x2 layout to display featured products with price, CTA and image. Perfect for showcases or promo sections.
+### ✅ Top Header template
+A lightweight, top header style css & html used in JP website.
